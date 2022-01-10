@@ -1,0 +1,25 @@
+$colors: (
+  bg-nav: #31353f,
+  bg-page-nav: #4e5360,
+  bg-nav-dark: #1e222c,
+  logo-color: #1e222c,
+  dark: #31353f,
+  gray: #bdbdbd,
+  gray-light: #f5f5f5,
+  gray-dark: #828282,
+  gray-semi-light: #d5d8dd,
+  border-gray: #d2d5d8,
+  white: #fff,
+  warning: #ffdb80,
+  green:#62b13d,
+  blue: #008ecf,
+  danger: #dc3646,
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+.test {
+   color: color(danger);
+}
